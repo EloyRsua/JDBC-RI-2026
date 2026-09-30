@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>uo.ri</groupId>
+		<artifactId>jdbc_cws_2025</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>cws0</artifactId>
+	<name>cws0</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>uo.ri</groupId>
+			<artifactId>cws_util</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.7.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.11</version>
+		</dependency>
+<!--		<dependency>
+			<groupId>uo.ri</groupId>
+			<artifactId>jdbc_cws_service_interfaces</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+-->		
+	</dependencies>
+</project>
