@@ -29,12 +29,6 @@ public class FindById{
                 pst.setString(1, id);
                 try (ResultSet rs = pst.executeQuery()) {
                     if (rs.next()) {
-                        Console.printf("\t%s %s %s %s %d\n",
-                                rs.getString(1),
-                                rs.getString(2),
-                                rs.getString(3),
-                                rs.getString(4),
-                                rs.getLong(5));
                         dto.id=rs.getString(1);
                         dto.name = rs.getString(2);
                         dto.surname = rs.getString(3);
