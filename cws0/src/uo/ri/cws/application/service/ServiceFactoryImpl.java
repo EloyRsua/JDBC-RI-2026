@@ -3,6 +3,7 @@ package uo.ri.cws.application.service;
 import uo.ri.cws.application.service.client.ClientCrudService;
 import uo.ri.cws.application.service.client.ClientHistoryService;
 import uo.ri.cws.application.service.invoice.InvoicingService;
+import uo.ri.cws.application.service.invoice.create.InvoicingServiceImpl;
 import uo.ri.cws.application.service.mechanic.MechanicCrudService;
 import uo.ri.cws.application.service.mechanic.crud.MechanicCrudServiceImpl;
 import uo.ri.cws.application.service.spare.SparePartCrudService;
@@ -69,8 +70,7 @@ public class ServiceFactoryImpl implements ServiceFactory{
 
 	@Override
 	public InvoicingService forCreateInvoiceService() {
-		// TODO Auto-generated method stub
-		return null;
+		return new InvoicingServiceImpl();
 	}
 
 }
